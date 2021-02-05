@@ -7,6 +7,11 @@ stages {
    stage("build"){
      steps{
         sh 'npm install'
+        
+     }
+
+     steps{
+        
         sh 'ng build --prod'
      }
    }
